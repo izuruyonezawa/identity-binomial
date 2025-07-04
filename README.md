@@ -25,4 +25,4 @@ Simulation datasets used can be generated with codes in `02_Simulation_examples`
 Code for evaluating identity-binomial models in R, in comparison with the results from Stata. For a proper comparison, we use the same set of simulated datasets produced in Stata, using the DGM with the largest interaction in scenario 4 as an example. We also show the performance of the proposed diagnostic applied to the estimates from R. 
 
 ### 04_Datasets
-Nine example simulation datasets generated from `02_Simulation_examples`, along with an additional explanatory Excel file used for Fig. S18. These datasets can be used directly for exploratory analysis and evaluation of diagnostics.
+Nine example simulation datasets generated from `02_Simulation_examples`, along with an additional explanatory Excel file used for Fig. S18. These datasets can be used directly for the measurement of model performance, exploratory analysis, and evaluation of diagnostics.
