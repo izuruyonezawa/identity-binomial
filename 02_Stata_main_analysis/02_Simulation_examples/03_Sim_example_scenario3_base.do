@@ -157,11 +157,8 @@ forvalues i=1/`repsplus1' {
 	
 	if `i'>`reps' continue, break
 	
-	di as input "Generating data..."
-	gendata, obs(624) rd(0.08) // specify treatment effect
-	
-	di as input "Analysing data..."
-	anadata, rep(`i') post(simcheck_s3_base)
+	qui gendata, obs(624) rd(0.08) // specify treatment effect
+	qui anadata, rep(`i') post(simcheck_s3_base)
 }
 
 postclose simcheck_s3_base

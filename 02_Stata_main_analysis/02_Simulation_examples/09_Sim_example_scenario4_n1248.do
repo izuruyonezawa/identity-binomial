@@ -157,11 +157,8 @@ forvalues i=1/`repsplus1' {
 	
 	if `i'>`reps' continue, break
 	
-	di as input "Generating data..."
-	gendata, obs(1248) rd(0.00)
-	
-	di as input "Analysing data..."
-	anadata, rep(`i') post(simcheck_s4_n1248)
+	qui gendata, obs(1248) rd(0.00)
+	qui anadata, rep(`i') post(simcheck_s4_n1248)
 }
 
 postclose simcheck_s4_n1248
