@@ -28,7 +28,7 @@ syntax [ , ///
     /*
 	The following covariates are not used in this simulation
 	
-	* Non-prognostic categorical variables `cov2' with four equally-sized subgroups
+	* Non-prognostic categorical variable `cov2' with four equally-sized subgroups
 	gen double shuffle = runiform()
 	gen cov2 = 0 if shuffle <0.25
 	replace cov2  = 1 if shuffle >=0.25 & shuffle < 0.5
@@ -36,7 +36,7 @@ syntax [ , ///
 	replace cov2  = 3 if shuffle >=0.75 
 	assert inlist(cov2,0,1,2,3)
 	
-	* Non-prognostic categorical variables `cov3' with six equally-sized subgroups
+	* Non-prognostic categorical variable `cov3' with six equally-sized subgroups
 	gen double shuffle2 = runiform()
 	gen cov3 = 0 if shuffle2 < 0.167
 	replace cov3  = 1 if shuffle2 >=0.167 & shuffle2 < 0.333
